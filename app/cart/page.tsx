@@ -13,7 +13,7 @@ export default function CartPage() {
         <div className="container mx-auto p-8">
             <h1 className="text-4xl font-bold mb-8">Shopping Cart</h1>
 
-            <ul className="space-y-4"> {/* List for cart items */}
+            <ul className="space-y-4">
                 {cartProducts.map(product => (
                     <li key={product.id} className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
                         <Link href={`/products/${product.id}`}>
